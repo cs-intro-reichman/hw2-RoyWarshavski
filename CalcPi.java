@@ -5,7 +5,6 @@ public class CalcPi {
         double pai = 1.0;
         double j = 3.0;
 
-        // סדר החישוב נשאר זהה למה שעשית
         for (int i = 1; i < numofPai; i++) {
 
             if (i % 2 == 0) {
@@ -16,9 +15,12 @@ public class CalcPi {
             j = j + 2.0;
         }
 
-        // שולט ידנית בירידת השורה עם "\n"
         System.out.print("pi according to Java: " + Math.PI + "\n");
-        System.out.print("pi, approximated: " + pai * 4 + "\n");
+
+        
+        System.out.print("pi, approximated:   " + pai * 4 + "\n");
+      
     }
 }
+
 
