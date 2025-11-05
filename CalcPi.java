@@ -1,7 +1,4 @@
 
-import javax.lang.model.util.ElementScanner14;
-
-// Computes an approximation of PI.
 public class CalcPi {
 	public static void main(String [] args) { 
 
@@ -25,7 +22,7 @@ public class CalcPi {
 
 		}
 		System.out.println("pi according to java: " + Math.PI);
-		System.out.println("pi, approximated:     " +pai*4);
+		System.out.println("pi, approximated: " +pai*4);
 
 			
 			

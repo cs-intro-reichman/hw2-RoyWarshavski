@@ -14,7 +14,7 @@ public class Cheers {
            char letter = upperWord.charAt(i);
 
                 if (vowels.indexOf(letter) != -1) {
-                System.out.println("Give me an " + letter + "!");
+                System.out.println("Give me an " + letter + ": "+ letter +"!");
 }               else {
                 System.out.println("Give me a  " + letter + "!");
 
@@ -22,17 +22,12 @@ public class Cheers {
 }
             }
 
-            System.out.println( "what doed it spell?");
+            System.out.println( "what does it spell?");
 
             for (int j=0;j<numofTime;j++){
 
                 System.out.println(upperWord + "!!!");
             }
-
-
-
-
-
 
 
 
