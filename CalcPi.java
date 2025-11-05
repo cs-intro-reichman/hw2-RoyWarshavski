@@ -2,22 +2,23 @@ public class CalcPi {
     public static void main(String[] args) {
 
         int numofPai = Integer.parseInt(args[0]);
-        double pai = 1;
-        double j = 3;
+        double pai = 1.0;
+        double j = 3.0;
 
+        // סדר החישוב נשאר זהה למה שעשית
         for (int i = 1; i < numofPai; i++) {
 
             if (i % 2 == 0) {
-                pai = pai + 1 / j;
-                j = j + 2;
+                pai = pai + 1.0 / j;
             } else {
-                pai = pai - 1 / j;
-                j = j + 2;
+                pai = pai - 1.0 / j;
             }
+            j = j + 2.0;
         }
 
-        System.out.println("pi according to Java: " + Math.PI);
-        System.out.println("pi, approximated: " + pai * 4);
+        // שולט ידנית בירידת השורה עם "\n"
+        System.out.print("pi according to Java: " + Math.PI + "\n");
+        System.out.print("pi, approximated: " + pai * 4 + "\n");
     }
 }
-   
+
