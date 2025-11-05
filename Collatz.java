@@ -12,7 +12,8 @@ public class Collatz {
                 System.out.print(num + " ");
                 int count = 1;
 
-                while (num != 1) {
+                
+                while (num != 1 || count == 1) {
                     if (num % 2 == 0) {
                         num = num / 2;
                     } else {
@@ -21,6 +22,7 @@ public class Collatz {
                     count++;
                     System.out.print(num + " ");
                 }
+
                 System.out.println("(" + count + ")");
             }
 
@@ -28,7 +30,6 @@ public class Collatz {
         }
 
         else {
-            
             System.out.println("Every one of the first " + N + " hailstone sequences reached 1.");
         }
     }
